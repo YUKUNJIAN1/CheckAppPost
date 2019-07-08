@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.frxs.check">
+
+    <!-- Bluetooth required -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Umeng statistical required permission start -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- Umeng statistical required permission end -->
+
+    <application
+        android:name="com.frxs.check.application.FrxsApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/packing192"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="登录页面"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"></activity>
+
+        <activity
+            android:name=".LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".PackCaseActivity"
+            android:label="快速装箱"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|stateUnchanged"></activity>
+
+        <activity
+            android:name=".MineActivity"
+            android:label="个人中心页面"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".UpdatePswActivity"
+            android:label="修改密码页面"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".OrderDetailsActivity"
+            android:label="订单详情页面"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".CheckGoodsListActivity"
+            android:label="对货列表"
+            android:screenOrientation="portrait"></activity>
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="57bff932e0f55ac607001339"></meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Umeng"></meta-data>
+
+        <!-- 兼容6.0、7.0安装应用文件的uri地址不同的问题 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+    </application>
+
+</manifest>

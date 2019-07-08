@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">装箱HD</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="just_now">刚刚</string>
+    <string name="minute_format">%1$d分钟前</string>
+    <string name="hour_format">%1$d小时前</string>
+    <string name="today_hour_minute_pattern">今天 HH:mm</string>
+    <string name="yesterday_hour_minute_pattern">昨天 HH:mm</string>
+    <string name="month_day_hour_minute_pattern">M月d日 HH:mm</string>
+    <string name="date_hour_minute_pattern">Y年M月d日 HH:mm</string>
+
+    <string name="tips_sign_out">再按一次退出程序</string>
+
+    <!--Login Activity-->
+    <string name="hint_login_account">输入账号</string>
+    <string name="hint_login_password">输入密码</string>
+    <string name="btn_login">登录</string>
+    <string name="tips_login_info">用户名或密码错误</string>
+    <string name="tips_null_account">您还没有填写账号</string>
+    <string name="tips_null_password">您还没有填写密码</string>
+    <string name="tips_input_limit">密码只能由数字、字母组成</string>
+
+    <string name="open_bluetooth">打开蓝牙</string>
+    <string name="search_bluetooth">搜索蓝牙</string>
+    <string name="my_devices">我的设备</string>
+    <string name="other_devices">其它设备</string>
+    <string name="state_unconnected">未连接</string>
+    <string name="state_connected">已连接</string>
+    <string name="print">打印</string>
+    <string name="str_psw">frxs@123</string>
+
+    <!-- LoginActivity -->
+    <string name="input_username">输入账号</string>
+    <string name="input_password">输入密码</string>
+    <string name="text_login">登录</string>
+    <string name="str_login_success">登录成功</string>
+    <string name="str_username_notnull">账号不能为空</string>
+    <string name="str_password_notnull">密码不能为空</string>
+    <string name="str_dialog_title_head">请选择环境【当前是：</string>
+    <string name="str_dialog_title_foot">】</string>
+
+    <!-- HomeActivity -->
+    <string name="text_receive">接收拣货单</string>
+    <string name="text_update_pw">修改密码</string>
+    <string name="text_exit">退出当前账户</string>
+    <string name="str_notifi">有新拣货单</string>
+    <string name="str_notifi_msg">有新拣货单，请拣货!</string>
+    <string name="str_exit">退出</string>
+    <string name="search_action">搜索</string>
+    <string name="search_shop_code">输入门店编号搜索</string>
+    <string name="search_station_num">输入待装区编号搜索</string>
+
+    <!-- UpdatePasswordActivity -->
+    <string name="hint_password">请输入新密码</string>
+    <string name="hint_password_two">请确认新密码</string>
+    <string name="btn_confirm">确定</string>
+    <string name="str_password">密码不能为空</string>
+    <string name="str_password_two">请再次确认密码</string>
+    <string name="str_confirm">两次密码输入不一致</string>
+    <string name="text_updatepw">修改密码</string>
+    <string name="tips_password_info">密码长度小于6位数</string>
+    <string name="tips_newpwd_error">密码确认错误</string>
+
+    <!-- AlertDialog -->
+    <string name="str_dialog_title">温馨提示</string>
+    <string name="str_dialog_msg">确定退出吗？</string>
+    <string name="str_dialog_cancle">取消</string>
+    <string name="str_dialog_stockmsg">确定标记为缺货？标记后状态将不可修改</string>
+
+    <!-- com.frxs.appframe.adapter.PrintOrderAdapter -->
+    <string name="str_stock_toast">缺货，不能打印！</string>
+    <string name="str_normal">正常 </string>
+    <string name="str_stock">缺货 </string>
+
+    <string name="product_gift">赠品</string>
+    <string name="product_reduce">搭售</string>
+
+    <!-- 在线更新 -->
+    <string name="updade_content">最新版本：%1$s \n\n更新内容\n%2$s</string>
+    <string name="update_title">发现版本更新</string>
+    <string name="update_ok">立即更新</string>
+    <string name="update_cancel">稍后更新</string>
+
+    <string name="package_num">包装数：%1$.2f</string>
+    <string name="unit_price">单价：￥%1$.2f</string>
+    <string name="bar_code">条码：%1$s</string>
+
+    <string name="cheked_multiple">当前装箱数量不能超过订货数量的%1$s倍</string>
+    <string name="gift_good">请将%1$s%2$s%3$s%4$s修改为%5$s%6$s</string>
+</resources>

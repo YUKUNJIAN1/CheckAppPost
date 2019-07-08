@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/frxs_gray_light" />
+
+    <ListView
+        android:id="@+id/lv_goods"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@color/frxs_gray_light"
+        android:dividerHeight="10dp"
+        android:listSelector="@android:color/transparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:background="@color/frxs_gray_dark"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_goods_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="商品总数量:50000"
+                android:textColor="@color/frxs_black_dark"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_goods_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(共计6行)"
+                android:textColor="@color/frxs_black_dark"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/btn_checked"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4"
+            android:background="@color/frxs_red"
+            android:gravity="center"
+            android:text="完成对货"
+            android:textColor="@color/white"
+            android:textSize="@dimen/twenty_six" />
+    </LinearLayout>
+</LinearLayout>
